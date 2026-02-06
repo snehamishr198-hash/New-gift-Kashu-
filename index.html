@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Love Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Landing Screen -->
+        <div id="landing" class="screen active">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+            <h1>I wrote you something…</h1>
+            <button id="open-first" class="btn">Open the first letter</button>
+        </div>
+
+        <!-- Letter 1 -->
+        <div id="letter1" class="screen letter">
+            <div class="letter-content">
+                <h2>How I fell in love with you</h2>
+                <p>I met you in August last year, and I still remember how naturally you entered my life.<br>
+                There was no big moment where I told myself this is it.<br>
+                It was quieter than that — more honest.</p>
+                <p>I started looking forward to your messages.<br>
+                I started feeling lighter after talking to you.<br>
+                I started noticing that even on difficult days, you were the one I wanted to tell everything to.</p>
+                <p>I fell in love with you in the smallest ways — in conversations that lasted longer than planned, in the comfort I felt just being myself around you, in the way you made distance feel less heavy.<br>
+                Loving you didn’t feel scary. It felt familiar, like something my heart already knew.</p>
+                <p>Even from far away, you became close to me.<br>
+                And somewhere between those moments, without rushing or forcing anything, I fell for you — completely and sincerely.</p>
+            </div>
+            <button id="open-second" class="btn">Open the next letter</button>
+        </div>
+
+        <!-- Letter 2 -->
+        <div id="letter2" class="screen letter">
+            <div class="letter-content">
+                <h2>Why you mean so much to me</h2>
+                <p>You mean everything to me because you are my safe place, even from miles away.<br>
+                In a world that constantly asks for strength, explanations, and perfection, you let me just be.</p>
+                <p>You listen when I talk — not just to hear words, but to understand what I’m feeling underneath them.<br>
+                You stay when I’m quiet, when I overthink, when I don’t know how to explain myself properly.<br>
+                You never make me feel like I’m too much.</p>
+                <p>Long distance isn’t easy, but with you, it feels worth it.<br>
+                Because you show up in the ways that matter — with patience, reassurance, and care.<br>
+                You remind me that love doesn’t need physical closeness to be real.</p>
+                <p>You are the person I trust with my thoughts, my fears, my softness.<br>
+                And that’s why you don’t just mean something to me — you mean everything.</p>
+            </div>
+            <button id="open-third" class="btn">One more…</button>
+        </div>
+
+        <!-- Letter 3 -->
+        <div id="letter3" class="screen letter">
+            <div class="letter-content">
+                <h2>Why you are such a wonderful person</h2>
+                <p>You are a wonderful person because your love is genuine.<br>
+                You don’t love loudly to impress — you love quietly, deeply, and sincerely.</p>
+                <p>You try.<br>
+                You care.<br>
+                You put effort into understanding me, even when it’s not easy.<br>
+                You choose kindness, even when the world doesn’t always return it.</p>
+                <p>Being with you has taught me that love can be calm, steady, and safe.<br>
+                That it can feel like reassurance instead of anxiety.<br>
+                That it can feel like home, even across distance.</p>
+                <p>I admire who you are — your heart, your intentions, the way you make people feel valued.<br>
+                And I feel incredibly lucky that I get to be loved by someone like you.</p>
+                <p>I don’t just love you for what you do for me.<br>
+                I love you for who you are.<br>
+                And I’m grateful for you — today, tomorrow, and every day in between.</p>
+            </div>
+            <button id="reveal" class="btn">Come here 🤍</button>
+        </div>
+
+        <!-- Final Reveal -->
+        <div id="final" class="screen">
+            <div id="cats" class="cats-svg">
+                <!-- Simple SVG of two cute cats hugging and kissing -->
+                <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cat 1 (left) -->
+                    <ellipse cx="60" cy="80" rx="25" ry="20" fill="#f4a261" stroke="#e76f51" stroke-width="2"/>
+                    <ellipse cx="55" cy="70" rx="8" ry="6" fill="#fff"/>
+                    <circle cx="52" cy="68" r="3" fill="#000"/>
+                    <circle cx="58" cy="68" r="3" fill="#000"/>
+                    <path d="M50 75 Q55 80 60 75" stroke="#e76f51" stroke-width="2" fill="none"/>
+                    <ellipse cx="45" cy="85" rx="5" ry="8" fill="#f4a261"/>
+                    <ellipse cx="75" cy="85" rx="5" ry="8" fill="#f4a261"/>
+                    <!-- Cat 2 (right) -->
+                    <ellipse cx="140" cy="80" rx="25" ry="20" fill="#f4a261" stroke="#e76f51" stroke-width="2"/>
+                    <ellipse cx="145" cy="70" rx="8" ry="6" fill="#fff"/>
+                    <circle cx="142" cy="68" r="3" fill="#000"/>
+                    <circle cx="148" cy="68" r="3" fill="#000"/>
+                    <path d="M140 75 Q145 80 150 75" stroke="#e76f51" stroke-width="2" fill="none"/>
+                    <ellipse cx="125" cy="85" rx="5" ry="8" fill="#f4a261"/>
+                    <ellipse cx="155" cy="85" rx="5" ry="8" fill="#f4a261"/>
+                    <!-- Hugging arms -->
+                    <path d="M75 85 Q100 70 125 85" stroke="#e76f51" stroke-width="3" fill="none"/>
+                    <!-- Kissing -->
+                    <path d="M80 75 Q100 65 120 75" stroke="#e76f51" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div id="hearts-container"></div>
+            <div id="mwah-text"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
